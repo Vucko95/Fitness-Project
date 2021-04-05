@@ -1,83 +1,141 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- This gives the browsers instructions how to control page dimensions and scaling-->
-    <!-- Basically Width of the page is following screen-width of the device/browser-->
-    <!-- ADD SEO for Extra points-->
 
-    <link rel="stylesheet" href="style.css" />
-    <source src="script.js" type="" />
-    <title>Fitness page</title>
-  </head>
-  <body>
-    <header>
-      <div class="container">
-        <div id="navlogo">
-          <img src="test.png" alt="logo" class="logo" />
-        </div>
-        <nav class="navbar">
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Articles</a></li>
-            <li><a href="">Our Services</a></li>
-            <li><a href="">Personal Guide</a></li>
-            <li><a href="">Book Online</a></li>
-          </ul>
+    <head>
+        <meta charset="UTF 8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1"> <!--w3schools, ensures the website works on all devices on screens-->
+        <title>Homepage</title> <!--change to name of business-->
+        <!--external JS and CSS-->
+        <script src="list-builder.js"></script>
+        <link rel="stylesheet" href="external.css"> 
+        <!-- Bootstrap CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+        <!--using mix of semantic elements and div throughout-->
+        <!--Header / Nav Bar-->
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavBar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">WebSite Name</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavBar">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page1 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Page 1-1</a></li>
+                      <li><a href="#">Page 1-2</a></li>
+                      <li><a href="#">Page 1-3</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">Page 2</a></li>
+                  <li><a href="#">Page 3</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#"><span class="glyphicon glyphicon-user"></span>Login</a></li>
+                </ul>
+              </div>
+          </div>
         </nav>
-      </div>
-    </header>
-    <br />
-    <section id="slideshow">
-      <div class="container">
-        <h1>Text about Gym</h1>
-        <p>Gym is blablabla</p>
-      </div>
-    </section>
-    <section id="Subscribtion">
-      <div class="container">
-        <h1>Suscribe for Weekly Content</h1>
-        <form>
-          <input type="email" placeholder="Please enter your email" />
-          <button type="submit" class="btnSuscribe">Suscribe</button>
-        </form>
-      </div>
-    </section>
 
-    <section id="infoboxes">
-      <div class="container">
-        <div class="infobox">
-          <img src="box.png" alt="" class="src" />
-          <h3>FITNESS SOMETHING</h3>
-          <p>
-            This is sample textThis is sample textThis is sample textThis is
-            sample textThis is sample text
-          </p>
-        </div>
-        <div class="infobox">
-          <img src="box.png" alt="" class="src" />
+        <br/>
 
-          <h3>FITNESS SOMETHING</h3>
-          <p>
-            This is sample textThis is sample textThis is sample textThis is
-            sample textThis is sample text
-          </p>
-        </div>
-        <div class="infobox">
-          <img src="box.png" alt="" class="src" />
+         <!--<div id="navlogo">
+              <img src="Images/Logo2.png" alt="logo" class="logo" width="1500" height="1500"/>
+            </div>
+            <div class="sideNav" id="mySideNav">
+                <p class="closeButton" onclick="closeNav()">&times;</p>
+                <a href="">Home</a>
+                <a href="">Blog</a>
+                <a href="">Our Services</a>
+                <a href="">Gallery</a>
+                <a href="">Book Online</a>
+            </div>
+            <span class="glyphicon glyphicon-menu-hamburger" onclick="openNav()">&#9776; open</span>
+            <div id="loginButton">
+              <form>
+                <button type="button" class="Button">Login</button>
+              </form>
+            </div>-->
 
-          <h3>FITNESS SOMETHING</h3>
-          <p>
-            This is sample textThis is sample textThis is sample textThis is
-            sample textThis is sample text
-          </p>
-        </div>
-      </div>
-    </section>
+        <section id="slideshow">
+          <div class="container-fluid">
+            <h1>Text about Gym</h1>
+            <p>Gym is blablabla</p>
+            <img src="images/SlideshowImg1.png" id="services" alt="services" height="650" width="1350"/>
+          </div>
+        </section>
 
-    <footer>
-      <p>This is gym footer</p>
-    </footer>
-  </body>
+        <section id="Subscribtion">
+          <div class="container-fluid">
+            <h1>Suscribe for Weekly Content</h1>
+            <form>
+              <input type="email" placeholder="Please enter your email" />
+              <button type="submit" class="btnSuscribe">Suscribe</button>
+            </form>
+          </div>
+        </section>
+    
+        <section id="testimonials">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-4">
+                <img src="Images/Rating1.jpg" class="img-circle" alt="" class="src" />
+                <h3>GREAT VARIETY OF CLASSES</h3>
+                <blockquote>
+                <p>
+                  I joined Fit Flow for the incredible class schedule, there are so many different classes to suit everyone's schedule and taste.
+                </p>
+                <footer>Natalia, Dublin</footer>
+                </blockquote>
+              </div>
+        
+            <div class="col-sm-4">
+              <img src="Images/Rating2.jpg" class="img-circle" alt="" class="src" />
+              <h3>EXCELLENT RANGE OF EQUIPMENT</h3>
+              <blockquote>
+              <p>
+                Whether you are into free weights, weight machines or cardio, there is plenty of equipment available to suit everyone.
+              </p>
+              <footer>Marcus, Dublin</footer>
+              </blockquote>
+            </div>
+  
+            <div class="col-sm-4">
+              <img src="Images/Rating3.jpg" class="img-circle" alt="" class="src" />
+              <h3>FRIENDLY TEAM</h3>
+              <blockquote>
+              <p>
+                Fit Flow has such a great team of personal trainers. I joined over a year ago and have really progressed thanks to the help of the trainers who are always around to help when you need it.
+              </p>
+              <footer>Katie, Wicklow</footer>
+             </blockquote>
+            </div>
+          </div>
+          </div>
+        </section>
+        
+        <section id="contactUs">
+          <div class="container-fluid">
+            <img src="images/ContactImg.png" id="contactImg" height="350" width="1350"/>
+          </div>
+        </section>
+
+        <footer id="hpfooter">
+          <p>This is gym footer</p>
+        </footer>
+
+    </body>
+
 </html>
