@@ -1,0 +1,146 @@
+.logo {
+  float: left;
+  width: 15%;
+  height: 15%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+}
+
+#contactImg {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+#services {
+  width: 70%;
+  height: 10%;
+}
+
+body {
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  /* Space between sections */
+}
+/* Space between sections */
+/*.container {
+  width: 75%;
+  75% of the screen will be covered max, 25% cut off 
+  margin: auto;
+  We move it to the middle
+}*/
+
+header {
+  background-color: gray;
+  border-bottom: 2px solid;
+  padding-top: 5px;
+  overflow: hidden;
+}
+header a {
+  text-decoration: none;
+}
+header ul {
+  padding: 0;
+  margin: 0;
+  /* By Default unordered list have padding */
+}
+header li {
+  float: left;
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  /* Horizontal Placement, and spacing between */
+}
+header nav {
+  float: right;
+  margin-top: 8px;
+}
+
+#slideshow {
+  min-height: 300px;
+  background-image: url(main.png);
+  text-align: center;
+}
+#slideshow h1 {
+  margin-top: 1px;
+  font-size: 40px;
+}
+#Subscribtion {
+  background: gray;
+}
+.btnSuscribe {
+  height: 20px;
+}
+#testimonials {
+  margin-left: 2.5%;
+}
+
+.img-circle {
+  margin-top: 5%;
+  margin-left: 20%;
+}
+
+/*#infoboxes .infobox {
+  float: left;
+  width: 29%;
+  padding: 10px;
+}
+#infoboxes .infobox img {
+  width: 120px;
+}*/
+#hpfooter {
+  float: left;
+  background-color: bisque;
+  width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+
+.Button {
+  background-color: #5ce1e6;
+  color: white;
+  border: none;
+  text-align: center;
+  padding: 25%;
+  margin-right: 10%;
+}
+
+.sideNav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: tomato;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sideNav .closeButton {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 25px;
+}
+
+@media screen and (max-height: 450px) {
+  .sideNav {
+    padding-top: 15px;
+  }
+  .sideNav a {
+    font-size: 18px;
+  }
+}
